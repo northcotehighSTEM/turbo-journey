@@ -21,7 +21,7 @@ void sensorForward(void); //done but untested
 double getRed(void);
 double getBlue(void);
 double getGreen(void);
-void goForward(void);
-void goLeft(void);
-void goRight(void);
+void goForward(void); //Banjo is writing
+void goLeft(void); //Banjo is writing
+void goRight(void); //Banjo is writing
 
