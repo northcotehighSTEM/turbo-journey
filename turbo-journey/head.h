@@ -1,6 +1,8 @@
+#include <Servo.h>
 
 //pins
-int sensorserv = 3;
+int sensorservpin = 3;
+Servo sensorserv;
 
 int s2 = 5;
 int s3 = 6;
@@ -13,9 +15,9 @@ double bscale = 2500.0
 
 
 
-void sensorLeft(void);
-void sensorRight(void);
-void sensorForward(void);
+void sensorLeft(void); //done but untested
+void sensorRight(void); //done but untested
+void sensorForward(void); //done but untested
 double getRed(void);
 double getBlue(void);
 double getGreen(void);
