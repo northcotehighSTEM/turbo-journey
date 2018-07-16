@@ -1,7 +1,11 @@
 #include <Servo.h>
 
-//pins
+//PIn Assignments
+
+//Sensor mount servo
 int sensorservpin = 3;
+
+//colour sensor
 int s2 = 5;
 int s3 = 6;
 int out = 7;
@@ -16,9 +20,9 @@ const double bscale = 2500.0
 void sensorLeft(void); //done but untested
 void sensorRight(void); //done but untested
 void sensorForward(void); //done but untested
-double getRed(void);
-double getBlue(void);
-double getGreen(void);
+double getRed(void); //done but untested
+double getBlue(void); //done but untested
+double getGreen(void); //done but untested
 void goForward(void); //Banjo is writing
 void goLeft(void); //Banjo is writing
 void goRight(void); //Banjo is writing

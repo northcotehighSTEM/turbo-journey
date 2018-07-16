@@ -1,8 +1,12 @@
 #include "head.h"
 
 void setup() {
-  // put your setup code here, to run once:
-  pinMode(LED_BUILTIN, OUTPUT);
+    // put your setup code here, to run once:
+    sensorserv.attach(sensorservpin);
+
+    pinMode(s2, OUTPUT);
+    pinMode(s3, OUTPUT);
+    pinMode(out, INPUT);
 }
 
 void loop() {
