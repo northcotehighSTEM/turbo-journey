@@ -1,5 +1,13 @@
 #include "head.h"
 
+int blackleft;
+int blackright;
+int blackforward;
+
+int greenleft;
+int greenright;
+int greenforward;
+
 void setup() {
     // put your setup code here, to run once:
     sensorserv.attach(sensorservpin);
@@ -9,23 +17,14 @@ void setup() {
     pinMode(out, INPUT);
 }
 
-void loop() {
-    // put your main code here, to run repeatedly:
-    int blackleft;
-    int blackright;
-    int blackforward;
-
-    int greenleft;
-    int greenright;
-    int greenforward;
-
+void takeColorInput(){
     sensorLeft();
-    if(getRed() + getBlue() + getGreen() < 40){
+    if(getRed() + getBlue() + getGreen() < 3 * blackthres){
         blackleft = 1;
     }
     else
         blackleft = 0;
-    if(2 * getGreen() - getRed() - getBlue() > 50)
+    if(2 * getGreen() - getRed() - getBlue() > 2 * greenthres)
         greenleft = 1;
     else
         greenleft = 0;
@@ -48,7 +47,9 @@ void loop() {
         greenright = 1;
     else
         greenright = 0;
+}
 
+void pathfind(){
     //We want to follow a green marker if there is one
     //Otherwise follow a black line if possible
 
@@ -77,6 +78,14 @@ void loop() {
         //The robot is fairly big, so we'll probably find the line just by going in a circle
         goRight();
     }
+}
+
+void loop() {
+    // put your main code here, to run repeatedly:
+
+    takeColorInput();
+
+    pathfind();
 
 }
 

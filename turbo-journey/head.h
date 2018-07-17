@@ -13,9 +13,12 @@ int out = 7;
 Servo sensorserv;
 
 //constants to callibrate colour sensor
-const double rscale = 3000.0
-const double gscale = 3500.0
-const double bscale = 2500.0
+const double rscale = 3000.0;
+const double gscale = 3500.0;
+const double bscale = 2500.0;
+
+const int blackthres = 13;
+const int greenthres = 25;
 
 void sensorLeft(void); //done but untested
 void sensorRight(void); //done but untested
