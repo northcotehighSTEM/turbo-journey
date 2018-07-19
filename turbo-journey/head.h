@@ -10,6 +10,12 @@ int s2 = 5;
 int s3 = 6;
 int out = 7;
 
+//pins for motors
+int in1 = 10;
+int in2 = 11;
+int in3 = 12;
+int in4 = 13;
+
 Servo sensorserv;
 
 //constants to callibrate colour sensor
