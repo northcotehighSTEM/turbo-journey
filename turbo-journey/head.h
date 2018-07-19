@@ -1,7 +1,7 @@
 #include <Servo.h>
 #include <Arduino.h>
 
-//PIn Assignments
+//Pin Assignments
 
 //Sensor mount servo
 const int sensorservpin = 3;
