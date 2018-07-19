@@ -41,7 +41,7 @@ void pathfind(){
         goForward();
     }
      else if(greenleft){
-        goLeft()
+        goLeft();
     }
     else if(greenright){
         goRight();
@@ -51,7 +51,7 @@ void pathfind(){
         goForward();
     }
     else if(blackleft){
-        goLeft()
+        goLeft();
     }
     else if(blackright){
         goRight();
@@ -60,5 +60,4 @@ void pathfind(){
     else
         //The robot is fairly big, so we'll probably find the line just by going in a circle
         goRight();
-    }
 }

@@ -1,22 +1,23 @@
 #include <Servo.h>
+#include <Arduino.h>
 
 //PIn Assignments
 
 //Sensor mount servo
-int sensorservpin = 3;
+const int sensorservpin = 3;
 
 //colour sensor
-int s2 = 5;
-int s3 = 6;
-int out = 7;
+const int s2 = 5;
+const int s3 = 6;
+const int out = 7;
 
 //pins for motors
-int in1 = 10;
-int in2 = 11;
-int in3 = 12;
-int in4 = 13;
+const int in1 = 10;
+const int in2 = 11;
+const int in3 = 12;
+const int in4 = 13;
 
-Servo sensorserv;
+const Servo sensorserv;
 
 //constants to callibrate colour sensor
 const double rscale = 3000.0;
