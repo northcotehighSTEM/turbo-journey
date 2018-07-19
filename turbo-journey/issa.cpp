@@ -1,15 +1,15 @@
 #include "head.h"
 
 void sensorLeft(void){
-    sensorserv.write(0);
+    sensorserv.write(60);
 }
 
 void sensorRight(){
-    sensorserv.write(75);
+    sensorserv.write(120);
 }
 
 void sensorForward(void){
-    sensorserv.write(150);
+    sensorserv.write(90);
 }
 
 double getRed(void){

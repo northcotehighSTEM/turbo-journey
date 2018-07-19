@@ -26,6 +26,7 @@ const double bscale = 2500.0;
 const int blackthres = 13;
 const int greenthres = 25;
 
+//function prototypes
 void sensorLeft(void); //done but untested
 void sensorRight(void); //done but untested
 void sensorForward(void); //done but untested
@@ -36,3 +37,14 @@ void goForward(void); //Banjo is writing
 void goLeft(void); //Banjo is writing
 void goRight(void); //Banjo is writing
 
+void takeColorInput(void);
+void pathfind(void);
+
+//global variables
+extern int blackleft;
+extern int blackright;
+extern int blackforward;
+
+extern int greenleft;
+extern int greenright;
+extern int greenforward;
