@@ -17,7 +17,7 @@ const int in2 = 11;
 const int in3 = 12;
 const int in4 = 13;
 
-const Servo sensorserv;
+extern Servo sensorserv;
 
 //constants to callibrate colour sensor
 const double rscale = 3000.0;

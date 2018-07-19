@@ -1,5 +1,7 @@
 #include "head.h"
 
+Servo sensorserv;
+
 int blackleft;
 int blackright;
 int blackforward;
