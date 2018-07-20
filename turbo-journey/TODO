@@ -1,0 +1,18 @@
+TODO
+
+We need to add code to deal sith the following scenarios
+->Break in the line
+    Continue straight
+->Water tower
+    Detect obstacle directly in front
+    move to the left while the obstacle is close by to the right
+    move to the right while the obstacle is not clse by to the right
+->Doorway
+    Detect obstacle to left and right but not directly in front
+    Move left if right obstacle is closer
+    Move right if left obstacle is closer
+->Spill area
+    Sweep around to find closest object
+    Drive up to it
+    Wrap arms around for 70 points
+    
