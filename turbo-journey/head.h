@@ -12,10 +12,10 @@ const int s3 = 6;
 const int out = 7;
 
 //pins for motors
-const int in1 = 10;
-const int in2 = 11;
-const int in3 = 12;
-const int in4 = 13;
+const int in1 = 11;
+const int in2 = 10;
+const int in3 = 13;
+const int in4 = 12;
 
 extern Servo sensorserv;
 

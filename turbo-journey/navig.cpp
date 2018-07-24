@@ -11,6 +11,7 @@ void takeColorInput(){
         greenleft = 1;
     else
         greenleft = 0;
+    delay(50);
 
     sensorForward();
     if (getRed() + getBlue() + getGreen() < 40){
@@ -21,6 +22,7 @@ void takeColorInput(){
         greenforward = 1;
     else
         greenforward = 0;
+    delay(50);
 
     sensorRight ();
     if (getRed() + getBlue() + getGreen() < 40){
@@ -30,6 +32,7 @@ void takeColorInput(){
         greenright = 1;
     else
         greenright = 0;
+    delay(50);
 }
 
 void pathfind(){
