@@ -18,8 +18,18 @@ void setup() {
     pinMode(s3, OUTPUT);
     pinMode(out, INPUT);
 
+    Serial.begin(9600);
+
+    /*goForward();
+    delay(3000);
+    goLeft();
+    delay(3000);
+    goRight();
+    delay(3000);*/
+    brakes();
+
     sensorForward();
-    delay(10000); //10 seconds of delay
+    delay(5000);
 }
 
 void loop() {

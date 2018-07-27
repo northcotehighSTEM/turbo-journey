@@ -24,11 +24,13 @@ const double rscale = 3000.0;
 const double gscale = 3500.0;
 const double bscale = 2500.0;
 
-const int blackthres = 20;
-const int greenthres = 25;
+const double blackthres = 50.0;
+const double greenthres = 0.65;
 
-const int sensordelay = 130;
-const int motordelay = 130;
+const int sensordelay = 150;
+const int motordelay = 60;
+const int turndelay = 80;
+const int greendelay = 230;
 
 //function prototypes
 void sensorLeft(void); //done but untested

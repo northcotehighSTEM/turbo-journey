@@ -1,12 +1,12 @@
 #include "head.h"
 
 void sensorLeft(void){
-    sensorserv.write(55);
+    sensorserv.write(60);
     delay(sensordelay);
 }
 
 void sensorRight(){
-    sensorserv.write(125);
+    sensorserv.write(120);
     delay(sensordelay);
 }
 
