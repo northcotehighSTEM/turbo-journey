@@ -17,6 +17,9 @@ void setup() {
     pinMode(s2, OUTPUT);
     pinMode(s3, OUTPUT);
     pinMode(out, INPUT);
+
+    sensorForward();
+    delay(10000); //10 seconds of delay
 }
 
 void loop() {
