@@ -46,7 +46,7 @@ void pathfind(){
     if(greenforward){
         goForward();
         Serial.println("Following green marker forward");
-        delay(motordelay);
+        delay(greendelay);
     }
      else if(greenleft){
         goLeft();
