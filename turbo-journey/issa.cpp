@@ -1,24 +1,27 @@
 #include "head.h"
 
+int out = out1;
+
 void sensorLeft(void){
-    sensorserv.write(60);
-    delay(sensordelay);
+    out = out1;
 }
 
-void sensorRight(){
-    sensorserv.write(120);
-    delay(sensordelay);
-}
-
-void sensorForward(void){
-    sensorserv.write(90);
-    delay(sensordelay);
+void sensorRight{(){
+    out = out2;
 }
 
 void red(void){
     //set sensor to red mode
     digitalWrite (s2,LOW);
     digitalWrite (s3,LOW);
+
+
+    //measure sensor output
+    long pulse = pulseIn(out, HIGH);
+
+    pulse = rscale/pulse;
+
+    return (double)pulse;
 
 }
 
