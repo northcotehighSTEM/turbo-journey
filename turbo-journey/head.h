@@ -3,6 +3,10 @@
 
 //Pin Assignments
 
+//distance sensor
+const int trig = 0;
+const int echo = 1;
+
 //Sensor mount servo
 const int sensorservpin = 3;
 
@@ -26,6 +30,8 @@ const double bscale = 2500.0;
 
 const double blackthres = 50.0;
 const double greenthres = 0.7;
+
+const double speedofsound = 343.0; //double is a variable type that allows decimals
 
 const int sensordelay = 150;
 **

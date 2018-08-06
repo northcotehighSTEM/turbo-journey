@@ -48,3 +48,29 @@ double getGreen(void){
     return (double)pulse;
 }
 
+double getDistance(){
+
+  digitalWrite(trigPin, HIGH);
+  delay(10);
+  digitalWrite(trigPin, LOW);
+  double duration = (double)pulseIn(echoPin, HIGH);
+
+  duration = duration / 2;
+  duration = duration / 1000000; // One million
+
+  double distance = speedofsound * duration;
+  //This is distance in metres
+
+  return distance;
+
+ }
+
+void waterTower(){
+    sensorserv.write(135);
+    while(getDistance() < 0.2){
+        goLeft();
+    }
+    brakes():
+
+}
+
