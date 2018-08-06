@@ -9,7 +9,8 @@ const int sensorservpin = 3;
 //colour sensor
 const int s2 = 5;
 const int s3 = 6;
-const int out = 7;
+const int outl = 7;
+const int outr = 8;
 
 //pins for motors
 const int in1 = 13;
@@ -25,12 +26,12 @@ const double gscale = 3500.0;
 const double bscale = 2500.0;
 
 const double blackthres = 60.0;
-const double greenthres = 0.8;
+const double greenthres = 0.70;
 
 const int sensordelay = 150;
-const int motordelay = 50;
-const int turndelay = 140;
-const int greendelay = 230;
+const int motordelay = 65;
+const int turndelay = 105;
+const int greendelay = 200;
 
 //function prototypes
 void sensorLeft(void); //done but untested

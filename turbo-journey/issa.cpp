@@ -15,20 +15,14 @@ void sensorForward(void){
     delay(sensordelay);
 }
 
-double getRed(void){
+void red(void){
     //set sensor to red mode
     digitalWrite (s2,LOW);
     digitalWrite (s3,LOW);
 
-    //measure sensor output
-    long pulse = pulseIn(out, HIGH);
-
-    pulse = rscale/pulse;
-
-    return (double)pulse;
 }
 
-double getBlue(void){
+void blue(void){
     //set sensor to blue mode
     digitalWrite (s2,LOW);
     digitalWrite (s3,HIGH);
