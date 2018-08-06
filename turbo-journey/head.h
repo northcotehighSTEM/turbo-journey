@@ -9,8 +9,9 @@ const int sensorservpin = 3;
 //colour sensor
 const int s2 = 5;
 const int s3 = 6;
-const int out = 7;
-
+const int out1 = 7;
+const int out2 =  8;
+extern int out;
 //pins for motors
 const int in1 = 13;
 const int in2 = 12 ;
@@ -32,7 +33,6 @@ const int sensordelay = 150;
 //function prototypes
 void sensorLeft(void); //done but untested
 void sensorRight(void); //done but untested
-void sensorForward(void); //done but untested
 double getRed(void); //done but untested
 double getBlue(void); //done but untested
 double getGreen(void); //done but untested
