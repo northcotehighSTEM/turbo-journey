@@ -34,7 +34,9 @@ void pathfind(){
 
     //First look for a green marker and follow it
 
-    if(greenleft){
+    if(greenleft && greenright)
+        goForwatd();
+    else if(greenleft){
         goLeft();
         Serial.println("Following green marker left");
 
