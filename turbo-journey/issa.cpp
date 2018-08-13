@@ -51,6 +51,7 @@ double getGreen(void){
     return (double)pulse;
 }
 
+/*
 double getDistance(){
 
   digitalWrite(trigPin, HIGH);
@@ -76,4 +77,5 @@ void waterTower(){
     brakes():
 
 }
+*/
 
