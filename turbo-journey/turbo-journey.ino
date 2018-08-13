@@ -29,6 +29,7 @@ void setup() {
     goRight();
     delay(3000);*/
     brakes();
+    srand((unsigned) time(NULL));
 
 }
 
