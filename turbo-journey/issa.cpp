@@ -51,7 +51,7 @@ double getGreen(void){
     return (double)pulse;
 }
 
-/*
+
 double getDistance(){
 
   digitalWrite(trigPin, HIGH);
@@ -70,12 +70,20 @@ double getDistance(){
  }
 
 void waterTower(){
-    sensorserv.write(135);
-    while(getDistance() < 0.2){
+    sensorserv.write(90 + 60);
+    while(getDistance() < 0.15){
         goLeft();
     }
-    brakes():
+    brakes();
+    while(!blackright){
+        if(getDistance() < 0.15)
+            goForward();
+        else
+            goRight();
+    }
+    brakes();
+    sersorserv.write(90);
 
 }
-*/
+
 
