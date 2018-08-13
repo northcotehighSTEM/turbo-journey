@@ -1,5 +1,6 @@
 #include <Servo.h>
 #include <Arduino.h>
+#include <time.h>
 
 //Pin Assignments
 
