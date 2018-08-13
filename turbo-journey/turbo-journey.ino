@@ -30,8 +30,6 @@ void setup() {
     delay(3000);*/
     brakes();
 
-    sensorForward();
-    delay(5000);
 }
 
 void loop() {

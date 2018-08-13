@@ -6,11 +6,11 @@ void sensorLeft(void){
     out = out1;
 }
 
-void sensorRight{(){
+void sensorRight(){
     out = out2;
 }
 
-void red(void){
+double getRed(void){
     //set sensor to red mode
     digitalWrite (s2,LOW);
     digitalWrite (s3,LOW);
@@ -25,7 +25,7 @@ void red(void){
 
 }
 
-void blue(void){
+double getBlue(void){
     //set sensor to blue mode
     digitalWrite (s2,LOW);
     digitalWrite (s3,HIGH);
@@ -54,10 +54,10 @@ double getGreen(void){
 
 double getDistance(){
 
-  digitalWrite(trigPin, HIGH);
+  digitalWrite(trig, HIGH);
   delay(10);
-  digitalWrite(trigPin, LOW);
-  double duration = (double)pulseIn(echoPin, HIGH);
+  digitalWrite(trig, LOW);
+  double duration = (double)pulseIn(echo, HIGH);
 
   duration = duration / 2;
   duration = duration / 1000000; // One million
@@ -82,7 +82,7 @@ void waterTower(){
             goRight();
     }
     brakes();
-    sersorserv.write(90);
+    sensorserv.write(90);
 
 }
 

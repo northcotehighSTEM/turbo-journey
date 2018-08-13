@@ -34,13 +34,13 @@ const double rscale = 3000.0;
 const double gscale = 3500.0;
 const double bscale = 2500.0;
 
-const double blackthres = 50.0;
+const double blackthres = 80.0;
 const double greenthres = 0.7;
 
 const double speedofsound = 343.0; //double is a variable type that allows decimals
 
 const int sensordelay = 150;
-**
+
 //function prototypes
 void sensorLeft(void); //done but untested
 void sensorRight(void); //done but untested

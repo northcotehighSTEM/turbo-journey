@@ -46,7 +46,7 @@ void pathfind(){
     //if no green marker was found, try looking for a black line
     else if(blackleft && blackright){
         goForward();
-        Serial.println("Both sensors over line")
+        Serial.println("Both sensors over line");
     }
     else if(blackleft){
         goLeft();
