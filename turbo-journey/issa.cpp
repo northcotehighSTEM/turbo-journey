@@ -131,10 +131,11 @@ void rescue(){
     while(getDistance() < 0.05)
         goForward();
     brakes();
-    grab();
+    grabbyserv.write(180);
     delay(500);
     goForward();
     delay(4000);
     brakes();
+    grabbyserv.write(0);
 }
 

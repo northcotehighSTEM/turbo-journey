@@ -16,6 +16,10 @@ const int s3 = 6;
 const int out1 = 7;
 const int out2 =  8;
 extern int out;
+
+//grabbing servo
+const int grabbyservpin = 9;
+
 //pins for motors
 const int in1 = 13;
 const int in2 = 12 ;
@@ -23,6 +27,7 @@ const int in3 = 11;
 const int in4 = 10;
 
 extern Servo sensorserv;
+extern Servo grabbyserv;
 
 //constants to callibrate colour sensor
 const double rscale = 3000.0;
@@ -49,6 +54,9 @@ void brakes(void);
 
 void takeColorInput(void);
 void pathfind(void);
+
+void watertower();
+void rescue();
 
 //global variables
 extern int blackleft;

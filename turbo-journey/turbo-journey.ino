@@ -1,6 +1,7 @@
 #include "head.h"
 
 Servo sensorserv;
+Servo grabbyserv;
 
 int blackleft;
 int blackright;
@@ -13,6 +14,7 @@ int greenforward;
 void setup() {
     // put your setup code here, to run once:
     sensorserv.attach(sensorservpin);
+    grabbyserv.attach(grabbyservpin);
 
     pinMode(s2, OUTPUT);
     pinMode(s3, OUTPUT);
