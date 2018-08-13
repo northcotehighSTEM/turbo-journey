@@ -86,4 +86,55 @@ void waterTower(){
 
 }
 
+void grab(){
+    //Will write after second servo installed
+}
+
+void rescue(){
+    brakes();
+    int angle;
+    for(angle = 0; angle < 180; angle++){
+        sensorserv.write(angle);
+        if(getDistance() < 0.7)
+            break;
+        delay(10);
+    }
+    while(abs(angle - 90) > 6){
+        if(angle < 90){
+            angle += 5;
+            sensorserv.write(angle);
+            goLeft();
+        }
+        else{
+            angle -= 5;
+            sensorserv.write(angle);
+            goRight();
+        }
+
+        while(getDistance() > 0.75)
+            delay(4);
+
+        brakes();
+    }
+
+    sensorserv.write(90);
+    if(angle < 90)
+            goLeft();
+        else
+            goRight();
+
+    while(getDistance() > 0.75)
+        delay(4);
+
+        brakes();
+
+    while(getDistance() < 0.05)
+        goForward();
+    brakes();
+    grab();
+    delay(500);
+    goForward();
+    delay(4000);
+    brakes();
+}
 
